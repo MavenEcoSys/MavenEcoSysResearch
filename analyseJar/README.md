@@ -1,10 +1,12 @@
 # Analysejar description
 
-'''
+Usage pattern:
+```
 Java -jar analyseJar.jar -c callstack -j jar_to_analyse -option
-'''
+```
 
-option usage:
+Option usage:
+```
  -bd,--CVEBlockDepth                  get block depth of target CVE
  -c,--callStackFile <arg>             File thatcontains call stack
  -cl,--ConstraintLength               get the number of constraint along
@@ -22,8 +24,9 @@ option usage:
  -md,--MethodBlockDepth               get block depth of method in target
                                       CVE
  -pc,--PathCoverage                   get path coverage of the path
+```
 
 Example:
-'''
+```
 Java -jar analyseJar.jar -c ./example/callstack/CVE-2016-9487@org.idpf:epubcheck:4.0.1 -j ./example/jar_to_analyse/epubcheck-4.0.1.jar -co
-'''
+````````````
