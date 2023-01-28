@@ -44,7 +44,7 @@ def setup():
 
 def draw_all():
     target = list(setup().values())
-    title = ["Versions", "Downloads", "Usage", "Classes", "KLOC"]
+    title = ["Versions", "Size", "Usage", "Classes", "KLOC"]
     fig, axes = plt.subplots(ncols=5, figsize=(16, 5), constrained_layout=True)
 
     for i in range(5):
@@ -59,7 +59,7 @@ def draw_all():
     target[-1][1].sort()
     axes[2].set_yticks([1000, 2000, 3000, 4000, 5000], ["1K", "2K", "3K", "4K", "5K"])
     axes[-1].set_yticks([i*2500 for i in range(8)], ["0"]+[str(i*2.5)+"K" for i in range(1, 8)])
-    plt.savefig("./data_overview.png", dpi=400)
+    plt.savefig("./data_overview.pdf", dpi=400)
 
 
 if __name__ == "__main__":

@@ -83,5 +83,3 @@ This directory contains scripts for the figures of the three research questions,
     │   └── survey
     └── data collection
 ```
-
-### We will update the WHOLE dataset once the paper is accepted.
