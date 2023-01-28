@@ -1,7 +1,5 @@
 # Data description
 
-Data is hold in dataset.db, which contains four tables: ARTIFACT, CVE, DEP and PATCH, and you can also find the data in the corresponding csv files.
-
 ## Overview
 
 The following figure shows various metadata of the collected dataset, and more detailed information is available in Section III-A of the paper.
@@ -36,7 +34,7 @@ The information and structure of each table is as follows:
   CVE(referred from CVE) | Patch | AFFECT_GAV_ID(referred from ARTIFACT)
   ```
 
-This dataset contains **300 CVE** and the detailed information of the corresponding patches and affected artifacts.
+This dataset contains CVEs and the detailed information of the corresponding patches and affected artifacts.
 
 ## Downstream response
 
@@ -54,32 +52,44 @@ This directory contains scripts for the figures of the three research questions,
 
 ```
 .
+├── LICENSE
 ├── README.md
+├── analyseJar
+│   ├── README.md
+│   ├── analyseJar.jar
+│   ├── example
+│   │   ├── RI
+│   │   ├── callstack
+│   │   └── jar_to_analyse
+│   ├── use_networkx.py
+│   └── use_networkx_shortest.py
 ├── csv
-│   ├── ARTIFACT.csv			
+│   ├── ARTIFACT.csv
 │   ├── CVE.csv
 │   ├── DEP.csv
 │   ├── PATCH.csv
 │   ├── README.md
 │   └── RESPONSE.csv
-├── dataset.db
-└── plot_script
-    ├── README.md
-    ├── RQ1
-    │   ├── RQ1.1
-    │   │   ├── upstream_jar
-    │   │   └── vulnerabel_function
-    │   └── RQ1.2
-    │       ├── risky_mtd_acc_ratio
-    │       └── risky_mtd_num
-    ├── RQ2
-    │   ├── constraint
-    │   ├── downstream_context
-    │   └── exploitable_path_ratio
-    └── RQ3
-    │   ├── distribution
-    │   ├── overview
-    │   ├── response_speed
-    │   └── survey
-    └── data collection
+├── paper.pdf
+├── plot_script
+│   ├── README.md
+│   ├── RQ1
+│   │   ├── RQ1.1
+│   │   └── RQ1.2
+│   ├── RQ2
+│   │   ├── constraint
+│   │   ├── downstream_context
+│   │   └── exploitable_path_ratio
+│   ├── RQ3
+│   │   ├── distribution
+│   │   ├── overview
+│   │   ├── response_speed
+│   │   └── survey
+│   └── data_collection
+│       ├── data_overview.pdf
+│       ├── data_overview.png
+│       ├── downstream
+│       ├── draw_boxplot.py
+│       └── upstream
+└── requirements.txt
 ```
