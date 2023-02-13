@@ -46,7 +46,6 @@ This example takes the CVE-2016-9487@org.idpf:epubcheck:4.0.1 as the input upstr
 **<font color=green>command:</font>**
 ```
 java -jar analyseJar.jar -c ./example/callstack/CVE-2016-9487@org.idpf:epubcheck:4.0.1 -j ./example/jar_to_analyse/epubcheck-4.0.1.jar -co
-
 ```
 **<font color=red>output:</font>**
 ```
